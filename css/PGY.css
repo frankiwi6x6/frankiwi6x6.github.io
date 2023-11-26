@@ -1,0 +1,106 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+ul,
+ol,
+span,
+div,
+section,
+article,
+aside,
+header,
+footer,
+nav,
+figure,
+figcaption,
+blockquote,
+pre,
+a,
+em,
+strong,
+small,
+sub,
+sup,
+code,
+mark,
+del,
+ins,
+dfn,
+samp,
+kbd,
+var,
+cite,
+abbr,
+address,
+time,
+audio,
+video,
+canvas,
+details,
+summary,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    font-family: 'Questrial', sans-serif;
+}
+
+h1 {}
+
+@media screen and (max-width: 768px) {
+    .contenedorBoton {
+        display: block;
+    }
+
+    .contenedorQR {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .contenedorBoton {
+        display: none;
+    }
+
+    .contenedorQR {
+        display: block;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.titulo {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.subtitulo {
+    animation: fadeIn 1s ease-in-out 1s forwards;
+    /* Agregamos "forwards" para mantener la última propiedad después de la animación */
+    opacity: 0;
+    /* Inicialmente establecemos la opacidad en 0 para evitar el parpadeo */
+}
+
+#contenedorBoton, #contenedorQR{
+    animation: fadeIn 1s ease-in-out 2s forwards;
+    opacity: 0;
+}
