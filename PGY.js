@@ -34,3 +34,4 @@ function descargarApp() {
     // Abrir la URL en una nueva ventana
     window.open(urlApk, '_blank');
 }
+
