@@ -19,13 +19,16 @@
     <h2 class="subtitulo">Nunca fue tan fácil pasar la lista</h2>
     <div class="position-absolute top-50 start-50 translate-middle" id="contenedorBoton">
         <p class="mb-2">¡Presiona este botón y descarga la app!</p>
-        <a class="btn btn-secondary" href="registrapp-main-c5d71c-release.apk" download="Registrapp.apk">
+        <a class="btn btn-secondary" href="registrapp-main-c5d71c-release.apk" download="Registrapp.apk"
+            target="_blank">
             <i class="bi bi-download"></i> Descargar la aplicación
         </a>
     </div>
     <div class="position-absolute top-50 start-50 translate-middle" id="contenedorQR" style="display: none;">
         <p class="mb-2">¡Escanea este código QR y descarga la app!</p>
-        <img src="qr.png" class="img-fluid" alt="Código QR">
+        <!-- Código QR con el enlace directo al archivo APK -->
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://frankiwi6x6.github.io/registrapp-main-c5d71c-debug.apk"
+            class="img-fluid" alt="Código QR">
     </div>
 </body>
 
